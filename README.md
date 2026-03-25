@@ -44,3 +44,10 @@ B->D: travel 2. Arrive at D at t=11. (Within time window)
 D->E: travel 3. Arrive at E at t=14. (Within time window)
 
 Total: cost=10, time=14
+
+#### Why A->C->D->E fails
+A->C: arrive t=5, wait -> t=6
+
+C->D: travel 8. Arrive at D at t=14. D's window is [3, 12] -> 14 > 12
+
+REF returns false therefore label is discarded.

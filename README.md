@@ -27,7 +27,7 @@ The proof of concept intentionally skips the postgreSQL part and focuses on how 
 
 ## Building and running
 ```
-g++ -std=c++17 poc.cpp -I"path/to/boost" -o poc
+g++ poc.cpp -I"path/to/boost" -o poc
 ./poc
 ```
 
